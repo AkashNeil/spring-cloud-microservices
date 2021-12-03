@@ -6,7 +6,11 @@
 
   <groupId>io.github.seebaware</groupId>
   <artifactId>spring-cloud-microservices</artifactId>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>customer</module>
+  </modules>
 
   <name>spring-cloud-microservices</name>
   <url>http://www.example.com</url>
@@ -26,6 +30,7 @@
         <artifactId>spring-boot-dependencies</artifactId>
         <version>${spring-boot-dependencies.version}</version>
         <scope>import</scope>
+        <type>pom</type>
       </dependency>
     </dependencies>
   </dependencyManagement>
