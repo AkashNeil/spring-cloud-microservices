@@ -12,16 +12,17 @@ Docker :
 
 PostgreSQL :
 
-- Go to your browser and go to localhost:5050 (as found in the 'docker-compose.yml' file) to open pgAdmin. 
+- Go to your browser and go to 'localhost:5050/browser' (port as found in the 'docker-compose.yml' file) to open pgAdmin. 
 - Set the master password as 'password'.
 - Create a new server.
-  - In the form, go to 'Connection' tab.
-  - Set the following properties (which can be cross-checked in the 'docker-compose.yml' file) :
-    - Host name = postgres
-    - Port = 5432
-    - Maintenance database = postgres 
-    - Username = seebaware
-    - Password = password
-    - Save password = True
+  - In the form :
+    - In the 'General' tab set the name as 'postgres'.
+    - Go to 'Connection' tab and set the following properties (which can be cross-checked in the 'docker-compose.yml' file) :
+      - Host name = postgres
+      - Port = 5432
+      - Maintenance database = postgres 
+      - Username = seebaware
+      - Password = password
+      - Save password = True
 
 
