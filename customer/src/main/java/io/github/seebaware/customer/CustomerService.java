@@ -1,9 +1,14 @@
 package io.github.seebaware.customer;
 
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service
-public record CustomerService(CustomerRepo customerRepo) {
+@AllArgsConstructor
+public class CustomerService {
+
+    private final CustomerRepo customerRepo;
+
     public void register(CustomerRegRequest customerRegRequest) {
         Customer customer = Customer.builder()
                 .firstName(customerRegRequest.firstName())
