@@ -3,3 +3,15 @@ server:
 spring:
   application:
     name: premium
+  datasource:
+    password: password
+    url: jdbc:postgresql://localhost:5432/premium # should be on a different database in a real world e.g.
+    username: seebaware
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
