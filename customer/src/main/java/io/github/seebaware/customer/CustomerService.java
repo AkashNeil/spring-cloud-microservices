@@ -21,7 +21,7 @@ public class CustomerService {
         customerRepo.saveAndFlush(customer);
 
         PremiumCheckResponse premiumCheckResponse = restTemplate.getForObject(
-                "http://localhost:8081/api/v1/premium-check/{customerId}",
+                "http://PREMIUM/api/v1/premium-check/{customerId}",
                 PremiumCheckResponse.class,
                 customer.getId()
         );
